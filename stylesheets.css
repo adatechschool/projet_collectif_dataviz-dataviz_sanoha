@@ -10,6 +10,18 @@
     display: inline-block;
 }
 
+.card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    background-size: cover;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
