@@ -1,4 +1,4 @@
-// Partie 1 : Réalisation du Slide
+// Partie 2 : Implémentation du card de chaque personnage
 
 // Affecter à la constante "url_api" l'url de l'API "characters"
 const url_api_characters = "https://hp-api.onrender.com/api/characters";
@@ -65,3 +65,13 @@ function ajout(liste_infos) {
     //div_box_infos.replaceChildren(title_wand);
 
 }
+
+// Récupérer le contenu de l'élément "div" à l'id "bouton" et l'affecter à la constante
+//const bouton_vers_personnage = document.getElementById("bouton");
+//bouton_vers_personnage.addEventListener("click", event => {
+
+//bouton_infos.innerHTML = ""
+
+//document.getElementById("bouton_container").innerHTML = bouton_infos;
+
+//document.removeChild(document.getElementById('bouton'));
