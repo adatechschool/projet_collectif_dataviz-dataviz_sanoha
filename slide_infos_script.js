@@ -78,6 +78,12 @@ axios.get(url_api_characters)
 
                     // Récupérer le contenu de l'élément "bouton_container" et l'affecter à la variable "bouton_infos"
                     let bouton_infos = document.getElementById('bouton_container');
+
+                    const nom_personnage = `${liste_infos[i].name}`;
+                    console.log(nom_personnage);
+                    const ancre_personnage = nom_personnage.replaceAll(" ", "%20");
+                    console.log(ancre_personnage);
+
                     //Affecter à l'élément "bouton_infos" une "div" qui a la classe "bouton" et qui contient
                     // à son centre un bouton qui nous réoriente vers la page "personnages"
                     bouton_infos.innerHTML =
@@ -85,7 +91,7 @@ axios.get(url_api_characters)
                         `
                          <div  id="bouton"
                          style="text-align: center">
-                             <button onClick="window.location.href = 'personnages.html';">
+                             <button onClick="window.location.href = 'personnages.html#${ancre_personnage}';">
                              Cliquez ici pour plus d'infos</button>
                          </div>
                         `;
