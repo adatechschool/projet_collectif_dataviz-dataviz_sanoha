@@ -1,5 +1,4 @@
 
-
 axios.get('https://hp-api.onrender.com/api/characters')
   .then((response) => {
     const container = document.querySelector('.swiper-wrapper');
@@ -58,5 +57,25 @@ axios.get('https://hp-api.onrender.com/api/characters')
       },
     },
   });
+
+const playButton = document.querySelector('.swiper-button-play');
+const pauseButton = document.querySelector('.swiper-button-pause');
+
+// Ajouter un écouteur d'événement sur le bouton play
+playButton.addEventListener('click', () => {
+  swiper.autoplay.start();
+});
+
+// Ajouter un écouteur d'événement sur le bouton pause
+pauseButton.addEventListener('click', () => {
+  swiper.autoplay.stop();
+});
+
+//changer le fill des boutons
+playButton.setAttribute("fill","yellow");
   
-  })
+});
+
+
+
+
