@@ -41,6 +41,7 @@ axios.get('https://hp-api.onrender.com/api/characters')
       clickable: true,
     },
     on: {
+
       init: function () {
         // configuration des délais pour chaque diapositive
         this.slides.forEach((slide) => {
@@ -58,6 +59,14 @@ axios.get('https://hp-api.onrender.com/api/characters')
     },
   });
 
+  // Ajouter un gestionnaire d'événement pour la souris
+swiper.el.addEventListener('mouseenter', () => {
+  swiper.autoplay.stop();
+});
+swiper.el.addEventListener('mouseleave', () => {
+  swiper.autoplay.start();
+});
+
 const playButton = document.querySelector('.swiper-button-play');
 const pauseButton = document.querySelector('.swiper-button-pause');
 
@@ -71,8 +80,6 @@ pauseButton.addEventListener('click', () => {
   swiper.autoplay.stop();
 });
 
-//changer le fill des boutons
-playButton.setAttribute("fill","yellow");
   
 });
 

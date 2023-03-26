@@ -55,12 +55,17 @@ body {
     height: 400px;
     transition: transform 0.5s ease;
     max-width: 100%;
+    /* animation-name: zoom;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer; */
 }
 
 /* zoom */
 .swiper-wrapper img:hover {
     transform: scale(1.7);
-    transform-origin: center;
+    /* transform-origin: center; */
     /* width: auto;
     height: 600px; */
     animation-play-state: paused;
