@@ -18,9 +18,9 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
                  <div class="card_box"
                  style="text-align: center">
                      <br>
+                     <h2 id="${character.name}">${character.name}</h2> 
                      <img class="card-image" src="${character.image}">
-                     <div class="card-body">
-                         <h2 id="${character.name}">${character.name}</h2>   
+                     <div class="card-body">  
                          <p>Espèce : ${character.species}</p>
                          <p>Gendre : ${character.gender}</p>
                          <p>Ancestre : ${character.ancestry}</p>
@@ -45,17 +45,22 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
         document.getElementById("personnages").innerHTML += ancre_personnage;
     });
 
-    ////
+    jump_anchor();
 
 })
-
 
 // Fonction qui récupère l'url de la page courante :
 // http://localhost:63342/projet_sanoha_dataviz_api/personnages.html#Cedric%20Diggory
 
-//function jump_anchor() {}
-
-
+function jump_anchor() {
+     const url = location.href;
+     console.log(url);
+     location.href = "#" + url.substring(66);
+     console.log(location.href);
+     history.replaceState(null,null,url);
+    // get anchor from url:  http://localhost:63342/projet_sanoha_dataviz_api/personnages.html#Cedric%20Diggory
+    //location.href = "#Ron%20Weasley"
+}
 
 // Affecter à la constante "url_api" l'url de l'API "characters"
 const url_api_houses = "https://hp-api.onrender.com/api/characters/house/:house";
