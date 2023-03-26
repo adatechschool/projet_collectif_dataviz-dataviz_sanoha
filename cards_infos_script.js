@@ -10,7 +10,9 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
     console.log("DATAS", datas); //on manipule la donnée
     datas.forEach(character => { //boucle for each
         console.log("personnages", character.name);
-        if (character.image !== "") {
+        if (character.image === "") {
+            //do nothing
+        } else {
             const card = `
                  <div class="card_box"
                  style="text-align: center">
