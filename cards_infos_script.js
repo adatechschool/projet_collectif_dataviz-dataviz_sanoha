@@ -10,18 +10,20 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
     console.log("DATAS", datas); //on manipule la donnée
     datas.forEach(character => { //boucle for each
         console.log("personnages", character.name);
-        const card = `
-            <div class="card"
-            style="text-align: center">
-            <img class="card-image" src="${character.image}">
-                <div class="card-body">
+        if (character.image !== "") {
+            const card = `
+                 <div class="card_box"
+                 style="text-align: center">
+                 <img class="card-image" src="${character.image}">
+                 <div class="card-body">
                     <h2>Name : ${character.name}</h2>
                     <p>house : ${character.house}</p>
                     <span>Acteur : ${character.actor}</span>
                 </div>
             </div>
             `;
-        document.getElementById("personnages").innerHTML += card;
+            document.getElementById("personnages").innerHTML += card;
+        }
     });
 })
 

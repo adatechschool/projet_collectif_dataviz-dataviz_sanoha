@@ -73,6 +73,22 @@ axios.get(url_api_characters)
                     div_box_infos.appendChild(title_alternate_names);
                     // Ajouter au contenu de l'élément "div_box_infos" le contenu de "title_house"
                     div_box_infos.appendChild(title_house);
+
+                    // *** Partie réorientation vers page "personnages"
+
+                    // Récupérer le contenu de l'élément "bouton_container" et l'affecter à la variable "bouton_infos"
+                    let bouton_infos = document.getElementById('bouton_container');
+                    //Affecter à l'élément "bouton_infos" une "div" qui a la classe "bouton" et qui contient
+                    // à son centre un bouton qui nous réoriente vers la page "personnages"
+                    bouton_infos.innerHTML =
+                        // Les caractéristiques HTML et CSS de la constante "bouton_infos"
+                        `
+                         <div  id="bouton"
+                         style="text-align: center">
+                             <button onClick="window.location.href = 'personnages.html';">
+                             Cliquez ici pour plus d'infos</button>
+                         </div>
+                        `;
                 })
             }
         }
