@@ -15,20 +15,20 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
         } else {
             const card =
                 `
-                 <div class="card_box"
-                 style="text-align: center">
-                     <br>
-                     <h2 id="${character.name}">${character.name}</h2> 
+                 <div class="box">
+                   <div class="card-box">
+                     <h1 id="${character.name}">${character.name}</h1> 
                      <img class="card-image" src="${character.image}">
                      <div class="card-body">  
-                         <p>Espèce : ${character.species}</p>
-                         <p>Gendre : ${character.gender}</p>
-                         <p>Ancestre : ${character.ancestry}</p>
-                         <p>Maison : ${character.house}</p>
-                         <p>Patronus : ${character.patronus}</p>
-                         <p>Baguette : ${character.wand.core}</p>
-                         <span>Acteur : ${character.actor}</span>
+                         <h3>Espèce : ${character.species}</h3>
+                         <h3>Gendre : ${character.gender}</h3>
+                         <h3>Ancestre : ${character.ancestry}</h3>
+                         <h3>Maison : ${character.house}</h3>
+                         <h3>Patronus : ${character.patronus}</h3>
+                         <h3>Baguette : ${character.wand.core}</h3>
+                         <h2>Acteur : ${character.actor}</h2>
                      </div>
+                   </div>
                  </div>
                  `;
             document.getElementById("personnages").innerHTML += card;
