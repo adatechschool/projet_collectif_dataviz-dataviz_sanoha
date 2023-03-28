@@ -94,7 +94,7 @@ axios.get(url_api_characters)
                          <div  id="bouton"
                          style="text-align: center">
                              <button class="bouton" onClick="window.location.href =
-                             'HTML/personnages.html#${ancre_personnage}';">
+                             'personnages.html#${ancre_personnage}';">
                              Cliquez ici pour plus d'infos</button>
                          </div>
                         `;

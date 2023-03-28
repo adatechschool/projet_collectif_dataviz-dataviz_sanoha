@@ -1,3 +1,5 @@
+//import mySpellApi from "./sort_api";
+
 axios.get('https://hp-api.onrender.com/api/spells')
 .then((response) =>{
     console.log(response.data);
@@ -13,6 +15,9 @@ axios.get('https://hp-api.onrender.com/api/spells')
         </div>`
         document.querySelector(".Container").innerHTML += resultat;
 
+    }
+});
+
         // const name = document.createElement('h3');
         // const sort = document.createElement('h4');
 
@@ -23,8 +28,7 @@ axios.get('https://hp-api.onrender.com/api/spells')
     //   classContainer.appendChild(name);
     //   classContainer.appendChild(sort);
 
-    }
-});
+
     
     // results.forEach(data=> {
     //     
