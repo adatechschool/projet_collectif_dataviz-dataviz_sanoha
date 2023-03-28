@@ -105,9 +105,37 @@ axios.get("https://hp-api.onrender.com/api/characters").then((response) => {
     modalTitle.innerHTML = name;
     modalContent.innerHTML = `<p>${house}</p>`;
 
+    // Définir la couleur de fond en fonction de la valeur de "house"
+    let color;
+    switch (house) {
+      case "Gryffindor":
+        color = "red";
+        break;
+      case "Slytherin":
+        color = "green";
+        break;
+      case "Hufflepuff":
+        color = "yellow";
+        break;
+      case "Ravenclaw":
+        color = "blue";
+        break;
+      default:
+        color = "gray";
+    }
+    changeModalColor(color); // Appeler la fonction pour changer la couleur de la modal
+
     // swiper.autoplay.stop(); // Pause le slider
 
     modalContainer.style.display = "flex";
+  }
+
+  function changeModalColor(color) {
+    // Récupérer l'élément modal
+    const modal = document.querySelector(".modal");
+
+    // Changer la couleur de fond de l'élément modal
+    modal.style.backgroundColor = color;
   }
 
   // Fonction pour fermer la modal

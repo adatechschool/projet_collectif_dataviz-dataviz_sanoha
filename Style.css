@@ -171,7 +171,7 @@ body {
 /* Style pour la modal */
 .modal {
     display: inline;
-    background-color: #eada28;
+    /* background-color: #eada28; */
     /* background-image:url(/img/Hogwarts-Symbole-650x366.png); */
     width: 400px;
     height: auto;
