@@ -1,4 +1,4 @@
-// Partie 2 : Implémentation du card de chaque personnage
+// Partie 3 : pour la page personnages "Implémentation du card de chaque personnage"
 
 // Affecter à la constante "url_api" l'url de l'API "characters"
 const url_api_characters = "https://hp-api.onrender.com/api/characters";
