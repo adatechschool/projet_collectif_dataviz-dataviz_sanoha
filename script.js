@@ -131,6 +131,10 @@ axios.get("https://hp-api.onrender.com/api/characters").then((response) => {
 
   // // Écouteur d'événement pour fermer la modal
   closeModalBtn.addEventListener("click", closeModal);
+  // Ajouter un écouteur d'événement pour détecter lorsque la souris quitte la zone du swiper
+  swiper.el.addEventListener("mouseleave", () => {
+    closeModal();
+  });
 
   // Update modal content based on clicked slide
   document.querySelectorAll(".swiper-slide").forEach((slide, index) => {
