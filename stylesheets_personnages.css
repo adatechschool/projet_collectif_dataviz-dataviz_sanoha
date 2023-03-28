@@ -11,6 +11,17 @@
     src: url('/fonts/Harry-Potter.ttf') format('truetype');
 }
 
+/* Définition de la police Harry Potter pour l'ensemble du document */
+@font-face {
+    font-family: "Harry Potter";
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
+}
+
 body {
     font-family: 'Harry Potter', sans-serif;
 }
@@ -38,16 +49,16 @@ body {
 
 /* Bouton retour à la page précédente fixe */
 .bouton {
-    bottom:1%;
-    right:1%;
-    z-index:9999;
+    bottom: 1%;
+    right: 1%;
+    z-index: 9999;
     display: inline-block;
     background-color: #8b0616;
     border-radius: 10px;
     border: 4px double #cccccc;
     color: #eeeeee;
     text-align: center;
-    font-size: 25px;
+    font-size: 17px;
     padding: 10px;
     width: 120px;
     height: 80px;
@@ -57,7 +68,7 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    position : fixed;
+    position: fixed;
     font-family: 'Harry Potter', sans-serif;
 }
 
@@ -97,7 +108,7 @@ body {
     grid-gap: 20px;
 }
 
-.card-box{
+.card-box {
     background-color: burlywood;
     padding: 60px;
     border: 10px dotted #8b0616;
@@ -106,7 +117,7 @@ body {
 
 /* grille */
 .box {
-    float : left;
+    float: left;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
@@ -127,11 +138,10 @@ body {
     box-sizing: border-box;
 }
 
-#scrollUp
-{
+#scrollUp {
     position: fixed;
     margin-right: 20px;
-    top : 50px;
+    top: 50px;
     right: -100px;
     opacity: 0.5;
 }
@@ -139,122 +149,97 @@ body {
 
 /* Menu */
 
+/* Style pour la liste de navigation*/
+
 .menu {
-    display: flex;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
-    background-color: none;     /* Ajout de la couleur d'arrière-plan */
-    list-style-type:none;
-    justify-content: center   /* Alignements des liens dans le menu */
-
+    display: flex; /* Transformation en flexbox */
+    padding: 0; /* Suppression des marges internes */
+    background-color: #000000a6; /*Ajout de la couleur d'arrière-plan*/
+    list-style-type: none;
+    justify-content: center ; /* Alignements des liens dans le menu */
+    font-family: "Harry Potter", sans-serif; /* Utilisation de la police Harry Potter */
+    font-size: larger;
+    /*! color: white; */
 }
 
+/* Style pour les éléments de la liste de navigation */
 .menu li {
-    list-style-type: none ;       /* Suppression des puces */
-    display:inline-block;
-    position:relative;
-    border-radius:8px 8px 0 0;
+    position: relative;
+    /*border-radius: 8px 8px 0 0;*/
 }
-.menu ul li{
-    background-color: none ;
-    display:inherit;
-    border-radius:0;
+
+.menu li:hover {
+    background-color: #8b0616;
 }
+
+/* .dropdown li:hover {
+    background-color: rgba(251, 235, 61, 0.68);
+    } */
+/* Style pour les liens de la liste de navigation*/
 
 .menu a {
-    display:block;                /* Transformation en block */
-    min-width: 120px;             /* Largeur minimale des liens */
+    display: block; /* Transformation en block */
+    min-width: 200px; /* Largeur minimale des liens */
+
+    margin: 0.5rem; /* Marges externes (1 valeurs = 4 directions) */
+    /*! padding: 0.8rem 0; */ /*Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    color: #fff; /*  Couleur du texte */
+
+    text-align: center; /* Centrage du texte */
+    /*! text-decoration: none; */ /* Suppression du soulignement */
+    /*! border: 1px solid #fff; */ /* Ajout d'une bordure*/
+    border-radius: 5px; /* Arrondis des bordures */
+    /*! transition: all 0.3s; */ /* Ajout des effets de transition */
+    /*!
+    background: #6e3010; */
+    /*! border: chocolate; */
 }
 
-.menu a {
-    display:block;                /* Transformation en block */
-    min-width: 120px;             /* Largeur minimale des liens */
-
-    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-    /* padding: 0.4rem 0;            Marges internes (2 valeurs = haut/bas et gauche/droite) */
-    color: #000000;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    text-align: center;           /* Centrage du texte */
-    background-color: #1ABC9C;    /* Couleur d'arrière-plan */
-    color: #031013;                  /* Couleur du texte */
-    text-decoration: rgb(138, 116, 82);        /* Suppression du soulignement */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 4px;           /* Arrondis des bordures */
-
-    transition: all 1s ;          /* Ajout des effets de transition */
+.menu a:hover {
+    color: #000;
+    /*! background-color: rgb(252, 160, 22); */
+    /*! border-color: #6e3010; */
 }
 
-.menu a.actif {
-    background-color: #d7e2f3 ;
-    color: #119b80 ;
-    border-color: #1ABC9C ;
+.menu ul a {
+    padding: 8px 0;
 }
 
-.menu a:hover,
-.menu a.active {
-    background-color: #1b99d8;
-    color: #161408;
-    border-color: #4b4b48;
+.menu li:hover li a {
+    color: white;
+    text-transform: inherit;
 }
 
-
-
-.menu li:hover{
-    border-radius:0;
-}
-
-/* background des liens sous menus */
-.menu li:first-child li{
-    background:#2A2333;
-}
-
-.menu li:nth-child(2)li{
-    background:#2A2333;
-}
-
-.menu li:nth-child(3)li{
-    background:#2A2333;
-}
-.menu li:last-child li{
-    background:#2A2333;
-}
-
-/* background des liens sous menus et sous menus au survol */
-
-.menu li:first-child:hover, .menu li:first-child li:hover{
-    background:#65537A;
-}
-
-/* les a href */
-
-.menu a{
-    text-decoration:none;
-    display:block;
-    padding:8px 32px;
-    color:#fff;
-    font-family:arial;
-}
-.menu ul a{
-    padding:8px 0;
-}
-.menu li:hover li a{
-    color:#fff;
-    text-transform:inherit;
-}
-.menu li:hover a, .menu  li li:hover a{
-    color:#000;
+.menu li:hover a, .menu li li:hover i {
+    color: white;
 }
 
 .list {
     position: relative;
-    display: inline-block;
+    display: block;
 }
-.dropdown {
-    display: none;}
 
+.list .dropdown {
+    display: none;
+}
+
+/* Style pour les sous-menus */
 .list:hover .dropdown {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*! font-family:"Harry Potter" Impact, "Haettenschweiler", sans-serif; */
+    font-size: larger;
+    background-color: darkgoldenrod;
+    padding: 0.8rem;
+    min-width: 215px;
+    max-width: 250px;
+    text-align: center;
+    border: 1px solid #fff;
+    /*border-radius: 10px;*/
+    text-decoration: dashed 0;
+    list-style-type: none;
+
+    /*! color: white; */
 }

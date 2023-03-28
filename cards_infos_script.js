@@ -26,7 +26,7 @@ fetch(url_api_characters).then(response => {/// Aller chercher la donnée
                          <h2>Maison : ${character.house}</h2>
                          <h2>Patronus : ${character.patronus}</h2>
                          <h2>Baguette : ${character.wand.core}</h2>
-                         <h1>Acteur : ${character.actor}</h1>
+                         <h2>Acteur : ${character.actor}</h2>
                      </div>
                    </div>
                  </div>
