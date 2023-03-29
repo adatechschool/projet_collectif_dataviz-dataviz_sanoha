@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Page Quiz sur les sorts magiques</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="stylesheets_personnages.css" type='text/css'>
+
+    <script type="module" src="sort_api.js"></script>
+
 </head>
 <body>
-    <div class="Container"></div> 
+
+    <div class="container-center-horizontal">
+        <div class="container"></div>
+
+        <br>
+        <selectct name ="spells-names">
+            <option value=""></option>
+        </selectct>
+        <div id="bouton_container"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"> </script>
+
+    <script type="module" src="sort_api.js"></script>
 
     <script src="sort_script.js"></script>
     

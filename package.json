@@ -2,6 +2,7 @@
   "dependencies": {
     "jquerry": "^0.0.1-security",
     "jQuery": "^1.7.4",
-    "swiper": "^9.1.1"
+    "swiper": "^9.1.1",
+    "type": "module"
   }
 }

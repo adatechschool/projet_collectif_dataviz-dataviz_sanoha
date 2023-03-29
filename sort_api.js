@@ -472,3 +472,4 @@ const mySpellApi =[
     },
 ];
 export default mySpellApi;
+
