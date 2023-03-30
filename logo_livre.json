@@ -1,0 +1,23 @@
+Maison = {
+    "Gryffondor": {
+        "nom": "Gryffondor",
+        "image": "Blason_de_Gryffondor.png",
+        "Qualité des maisons": "Courage, Bravoure, Détermination"
+    },
+    "Serpentard": {
+        "nom": "Serpentard",
+        "image": "Blason_de_Serpentard.png",
+        "Qualité des maisons": "Fierté, Ruse, Provocation"
+    },
+    "Poufsouffle": {
+        "nom": "Poufsouffle",
+        "image": "Blason_de_Poufsouffle.png",
+        "Qualité des maisons": "Dévouement, Patience, Loyauté"
+    },
+    "Serdaigle": {
+        "nom": "Serdaigle",
+        "image": "Blason_de_Poufsouffle.png",
+        "Qualité des maisons": "Etude, Esprit, Sagesse"
+    }
+}
+
