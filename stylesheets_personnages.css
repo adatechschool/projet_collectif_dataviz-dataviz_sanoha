@@ -152,6 +152,8 @@ body {
 /* Style pour la liste de navigation*/
 
 .menu {
+    top : 0px;
+
     display: flex; /* Transformation en flexbox */
     padding: 0; /* Suppression des marges internes */
     background-color: #000000a6; /*Ajout de la couleur d'arrière-plan*/
@@ -159,6 +161,7 @@ body {
     justify-content: center ; /* Alignements des liens dans le menu */
     font-family: "Harry Potter", sans-serif; /* Utilisation de la police Harry Potter */
     font-size: larger;
+    position :sticky;
     /*! color: white; */
 }
 

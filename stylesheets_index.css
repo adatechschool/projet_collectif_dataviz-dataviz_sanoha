@@ -17,6 +17,10 @@ body {
     font-family: 'Harry Potter', sans-serif;
 }
 
+.container-top{
+    top: 0%;
+}
+
 /* centrer horinzontalement */
 .container-center-horizontal {
     text-align: center;
@@ -29,9 +33,9 @@ body {
     border: 4px double #cccccc;
     color: #eeeeee;
     text-align: center;
-    font-size: 26px;
+    font-size: 23px;
     padding: 10px;
-    width: 180px;
+    width: 140px;
     height: 80px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -55,6 +59,56 @@ body {
     text-shadow: #031013;
     font-family: 'Harry Potter', sans-serif;
 }
+
+.spell-option{
+
+    width:300px;
+}
+
+/* centrer horizontalement et verticalement */
+.container-flex {
+    /* Mieux vaut centrer le texte dans un
+     cercle. */
+    text-align : center;
+
+    /* On fait attention à ce que le texte
+       ne touche pas la bordure. On placera
+       donc le texte avec un remplissage, ce
+       qui donnera une meilleure impression
+       pour le cercle. */
+    padding : 10em;
+    background-color: #ff8202;
+
+    /* La bordure marquera le cercle. On
+       pourrait également utiliser un arrière-
+       plan car celui-ci aurait été contenu
+       par border-radius */
+    border : 0.5em solid black;
+
+    /* Assurons-nous que la boîte soit carrée
+       pour obtenir un cercle bien rond plutôt
+       qu'une ellipse ;) */
+    max-width : 500px;
+    height: 10em;
+
+    /* Enfin, transformons le carré en cercle */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.box-flex {
+    background-color: #ff8202;
+    padding: 20px;
+    max-width : 500px;
+}
+
+.spell-option{
+    max-width : 200px;
+}
+
 
 /* Partie Affichage du slide */
 
@@ -318,3 +372,106 @@ body {
     border-radius: 5px;
     margin-top: 10px;
   } */
+
+.box-reponse{
+    bottom: 1%;
+}
+
+/* Menu */
+
+/* Style pour la liste de navigation*/
+
+.menu {
+    top : 1%;
+    display: flex; /* Transformation en flexbox */
+    padding: 0; /* Suppression des marges internes */
+    background-color: #000000a6; /*Ajout de la couleur d'arrière-plan*/
+    list-style-type: none;
+    justify-content: center ; /* Alignements des liens dans le menu */
+    font-family: "Harry Potter", sans-serif; /* Utilisation de la police Harry Potter */
+    font-size: larger;
+    position :sticky;
+    /*! color: white; */
+}
+
+/* Style pour les éléments de la liste de navigation */
+.menu li {
+    position: relative;
+    /*border-radius: 8px 8px 0 0;*/
+}
+
+.menu li:hover {
+    background-color: #8b0616;
+}
+
+/* .dropdown li:hover {
+    background-color: rgba(251, 235, 61, 0.68);
+    } */
+/* Style pour les liens de la liste de navigation*/
+
+.menu a {
+    display: block; /* Transformation en block */
+    min-width: 100px; /* Largeur minimale des liens */
+
+    margin: 0.5rem; /* Marges externes (1 valeurs = 4 directions) */
+    /*! padding: 0.8rem 0; */ /*Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    color: #fff; /*  Couleur du texte */
+
+    text-align: center; /* Centrage du texte */
+    /*! text-decoration: none; */ /* Suppression du soulignement */
+    /*! border: 1px solid #fff; */ /* Ajout d'une bordure*/
+    border-radius: 5px; /* Arrondis des bordures */
+    /*! transition: all 0.3s; */ /* Ajout des effets de transition */
+    /*!
+    background: #6e3010; */
+    /*! border: chocolate; */
+}
+
+.menu a:hover {
+    color: #000;
+    /*! background-color: rgb(252, 160, 22); */
+    /*! border-color: #6e3010; */
+}
+
+.menu ul a {
+    padding: 8px 0;
+}
+
+.menu li:hover li a {
+    color: white;
+    text-transform: inherit;
+}
+
+.menu li:hover a, .menu li li:hover i {
+    color: white;
+}
+
+.list {
+    position: relative;
+    display: block;
+}
+
+.list .dropdown {
+    display: none;
+}
+
+/* Style pour les sous-menus */
+.list:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*! font-family:"Harry Potter" Impact, "Haettenschweiler", sans-serif; */
+    font-size: larger;
+    background-color: darkgoldenrod;
+    padding: 0.8rem;
+    min-width: 215px;
+    max-width: 250px;
+    text-align: center;
+    border: 1px solid #fff;
+    /*border-radius: 10px;*/
+    text-decoration: dashed 0;
+    list-style-type: none;
+
+    /*! color: white; */
+}

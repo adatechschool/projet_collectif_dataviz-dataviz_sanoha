@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Page Quiz sur les sorts magiques</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+<title>La liste des sorts avec description en anglais</title>
     <link rel="stylesheet" href="stylesheets_personnages.css" type='text/css'>
-
-    <script type="module" src="sort_api.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="images/Harry%20Potter.png">
 </head>
 <body>
 
-    <div class="container-center-horizontal">
-        <div class="container"></div>
+<ul class="menu">
+<li class ="list">
+<a href="#" class="actif">Auteur</a>
+<ul class="dropdown">
 
-        <br>
-        <selectct name ="spells-names">
-            <option value=""></option>
-        </selectct>
-        <div id="bouton_container"></div>
-    </div>
+<li><i href="#">Biographie</i></li>
+<li><i href="#">Interview</i></li>
+<li><i href="#">Récompense</i></li>
+</ul>
+</li>
+<li class ="list">
+<a href="#" class="actif">Livres</a>
+<ul class="dropdown">
+<li><i href="#">Tome 1</i><li>
+<li><i href="#">Tome 2</i></li>
+<li><i href="#">Tome 3</i></li>
+<li><i href="#">Tome 4 </i></li>
+<li><i href="#">Tome 5</i></li>
+<li><i href="#">Tome 6</i></li>
+<li><i href="#">Tome 7</i></li>
+<li><i href="#">Tome 8</i></li>
+</ul>
+</li>
+<li class ="list">
+<a href="#" class="actif">Films</a>
+<ul class="dropdown">
+<li><i href="#">Harry Potter à l'Ecole des Sorciers</i></li>
+<li><i href="#">Harry Potter et la Chambre des Secrets</i></li>
+<li><i href="#">Harry Potter et le Prisonniers d'Azkaban</i></li>
+<li><i href="#">Harry Potter et la Coupe de Feu</i></li>
+<li><i href="#">Harry Potter et l'Ordre du phénix</i></li>
+<li><i href="#">Harry Potter et le Prince de Sang-mêlé</i></li>
+<li><i href="#">Harry Potter et les Reliques de la Mort - Partie 1</i></li>
+<li><i href="#">Harry Potter et les Reliques de la Mort - Partie 2</i></li>
+</ul>
+</li>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"> </script>
+<li class ="list">
+<a href="#" class="actif">Hogwarts</a>
+<ul class="dropdown">
+<li><i href="sort.html">Liste des sorts</i></li>
+<li><i href="#">Gif Harry potter</i> </li>
+<li><i href="#">Quiz</i> </li>
+<li><i href="#"> Trailer</i> </li>
 
-    <script type="module" src="sort_api.js"></script>
 
-    <script src="sort_script.js"></script>
-    
+
+</ul>
+
+</li>
+
+</ul>
+<div class="container"></div>
+
+<div class="container-left">
+    <button class="bouton" type="button" onClick="window.location.href = 'index.html';">
+        <span>Retour à l'Accueil</span>
+    </button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"> </script>
+
+<script src="sort_script.js"></script>
+
 </body>
 
 
