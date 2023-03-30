@@ -46,7 +46,7 @@ axios.get(mySpellApi).then((response) => {/// Aller chercher la donnée
                 window.open("index.html", "Merci d'avoir jouer le jeu!");
                 }
             else {
-                alert('Dommage c\'est ncorrect ! Merci d\'avoir jouer le jeu!');
+                alert('Dommage c\'est incorrect ! Merci d\'avoir jouer le jeu!');
                 window.open("index.html", "Merci d'avoir jouer le jeu!");
 
             }
