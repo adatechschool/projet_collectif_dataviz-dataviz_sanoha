@@ -1,0 +1,54 @@
+
+/* Définition de la police Harry Potter pour l'ensemble du document */
+@font-face {
+    font-family: "Harry Potter";
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
+    }
+  
+  
+  h1{
+    font-family:"Harry Potter", 'Arial', sans-serif;
+    font: size 200px;;
+    color: rgb(237, 23, 23);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  h1:hover{
+    color :rgb(2, 0, 0);
+     
+  }
+
+
+  h2{
+    font-family:"Harry Potter", 'Arial', sans-serif;
+    font: size 100px;
+    color:rgb(255, 251, 251);
+    text-align: center;
+  }
+
+  h2:hover{
+    color :rgb(237, 23, 23);
+     
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  body {
+    background-image: url("Harry_Background.jpg");
+    background-size:auto; /* permet de redimensionner l'image de fond pour qu'elle remplisse tout l'espace disponible */ /* empêche l'image de fond de se répéter */
+  }
+  
+.video :hover{
+    transform: scale(1.1);
+}
